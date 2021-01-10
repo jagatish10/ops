@@ -72,7 +72,7 @@ include('../sessionchat.php')
                   </a>
               </div>
         <div class="right-div">
-       <a class="btn btn-danger pull-right btn--red" href="logout.php" onclick="return confirm('Are you sure you want to logout ?')">LOG ME OUT</a>
+       <a class="btn btn-danger pull-right btn--red" href="../logout.php" onclick="return confirm('Are you sure you want to logout ?')">LOG ME OUT</a>
               </div>
           </div>
       </div>
