@@ -150,7 +150,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
                           <!-- Specify URLs -->
                           <input type="hidden" name="shopping_url" value="https://ops-eprint.herokuapp.com/user/upload1.php">
                           <input type='hidden' name='cancel_return' value='https://ops-eprint.herokuapp.com/paypal/cancel.php'>
-                          <input type='hidden' name='return' value='https://ops-eprint.herokuapp.com/success.php'>
+                          <input type='hidden' name='return' value='https://ops-eprint.herokuapp.com/paypal/success.php'>
                           <input type='hidden' name='notify_url' value='https://ops-eprint.herokuapp.com/paypal/ipn.php'>
 
                           <!-- Display the payment button. -->
