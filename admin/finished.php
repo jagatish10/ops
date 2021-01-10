@@ -18,7 +18,7 @@ if(isset($_POST['search']))
 
 function filterTable($query)
 {
-    $connect = mysqli_connect("localhost", "root", "", "ops");
+    $connect = mysqli_connect("sql12.freesqldatabase.com", "sql12386185", "dWtsJEfg3j", "sql12386185");
     $filter_Result = mysqli_query($connect, $query);
     return $filter_Result;
 }
