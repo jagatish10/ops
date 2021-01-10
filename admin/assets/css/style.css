@@ -1,0 +1,339 @@
+﻿
+/*=============================================================
+    Authour URI: www.binarytheme.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% Free To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+
+    ========================================================  */
+
+
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height:28px;
+    background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
+  	background-size: 400% 400%;
+  	-webkit-animation: gradient 8s ease infinite;
+  	        animation: gradient 8s ease infinite;
+
+}
+
+
+
+}
+.glow {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 5px rgba(122 28 106), 0 0 10px rgba(122 28 106), 0 0 15px rgba(122 28 106), 0 0 20px rgba(122 28 106),
+    0 0 25px rgba(122 28 106);
+  }
+
+
+}
+
+.center {
+  float: left;
+  margin-left: 0px 0px 0px 30px;
+  margin-top: -110px;
+  width: 300px;
+  height: 300px;
+}
+
+.center1 {
+  margin-left: auto;
+  margin-right: -100px;
+}
+
+.corner{
+  border-radius: 25px;
+}
+
+.pad{
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header {
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+.info {
+  text-align: right;
+  color: black;
+  font-size: 15px;
+}
+
+.table-container {
+  text-align: center;
+  width: 500px;
+	height: 450px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.table {
+  color: black;
+  background-color: white;
+}
+.set-radius-zero {
+    border-radius:0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius:0px;
+}
+.content-wrapper {
+    margin-top: 40px;
+    min-height:800px;
+    padding-bottom:90px;
+}
+
+.header-line {
+    font-weight:900;
+    padding-bottom:25px;
+    border-bottom:1px solid #eeeeee;
+    text-transform:uppercase;
+}
+.pad-botm {
+    padding-bottom:30px;
+}
+
+
+/* =============================================================
+   NAVBAR & MENU STYLES
+ ============================================================ */
+
+.right-div {
+    float: right;
+    padding: 20px;
+}
+#menu-top a {
+    color:#000;
+    text-decoration:none;
+    font-weight:500;
+    padding: 25px 15px 25px 15px;
+    text-transform:uppercase;
+
+}
+.menu-section {
+  background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 8s ease infinite;
+          animation: gradient 8s ease infinite;
+    border-bottom:5px solid #FFF;
+    width:100%
+}
+.menu-top-active {
+    background-color:#eeeeee;
+}
+.navbar-inverse {
+background-color: #FFF;
+border-color: rgba(155, 153, 153, 0.23);
+background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
+background-size: 400% 400%;
+-webkit-animation: gradient 8s ease infinite;
+        animation: gradient 8s ease infinite;
+
+}
+
+.navbar {
+    min-height: 90px;
+    margin-bottom: 0px;
+
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color:transparent;
+}
+.navbar-toggle {
+background-color: black;
+border: 1px solid black;
+}
+
+
+
+    /* =============================================================
+   DASHBOARD STYLES
+ ============================================================ */
+
+.img-comments {
+   border: 3px double #e1e1e1;
+height: 60px;
+
+}
+
+.elfsight-app-ba6162b0-283d-43e9-8715-8b2c50e9cba2 {
+  height: 200px;
+  width: 30%;
+  margin: left;
+}
+
+.chat-widget-main {
+    max-height:330px;
+    overflow:auto;
+}
+
+.slide-bdr {
+   border:5px solid #9170E4
+}
+.chat-widget-left:after {
+    top: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-top-color: #F70E62;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+.chat-widget-left {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #F70E62;
+    font-size:12px;
+}
+.chat-widget-right:after {
+    top: 100%;
+    right: 10%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-top-color: #5AA8CC;
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+.chat-widget-right {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px solid #5AA8CC;
+    font-size:12px;
+}
+
+.chat-widget-name-left {
+   color: #808080;
+    margin-top: 30px;
+    margin-left: 60px;
+    text-align:left;
+}
+
+    .img-left-chat {
+        border:3px double #e1e1e1;
+        float:left;
+        margin-right:30px;
+    }
+     .img-right-chat {
+        border:3px double #e1e1e1;
+        float:right;
+        margin-left:30px;
+    }
+     .chat-widget-main img-right {
+        border:3px double #e1e1e1;
+        float:left;
+    }
+.chat-widget-name-left h4 {
+    font-weight:normal;
+    font-size:11px;
+
+}
+.chat-widget-name-left h5 {
+    font-weight:normal;
+    font-size:10px;
+}
+.chat-widget-name-right h4 {
+    font-weight:normal;
+    font-size:11px;
+}
+.chat-widget-name-right h5 {
+    font-weight:normal;
+    font-size:10px;
+}
+.chat-widget-name-right {
+    color: #808080;
+    margin-top: 40px;
+    margin-right: 60px;
+    text-align:right;
+}
+
+.recent-users-sec img {
+    max-height:80px;
+    margin:15px;
+}
+
+.back-widget-set {
+    background-color:transparent;
+}
+
+/* =============================================================
+   FOOTER SECTION STYLES
+ ============================================================ */
+.footer-section {
+    padding:25px 50px 25px 50px;
+    color:#FFF;
+    font-size:16px;
+      background-color: #f7f7f7;
+      text-align:right;
+       border-top:5px solid #FFF;
+       background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
+      background-size: 400% 400%;
+      -webkit-animation: gradient 8s ease infinite;
+              animation: gradient 8s ease infinite;
+
+}
+
+    .footer-section a, .footer-section a:hover {
+        color:#000;
+    }
