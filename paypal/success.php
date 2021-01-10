@@ -21,11 +21,83 @@ if(!empty($txn_id)){
         $orderItemResult=mysqli_query($dbconn,"SELECT p.FILE, i.gross_amount FROM stat_success as i LEFT JOIN stat as p ON p.ORDE_ID = i.item_id WHERE payment_id = '".$payment_id."'");
       //  $orderItemResult = $db->query("SELECT p.name, i.quantity, i.gross_amount FROM order_items as i LEFT JOIN products as p ON p.id = i.item_number WHERE payment_id = '".$payment_id."'");
 ?>
-    <h1>Your payment has been successful.</h1>
-    <h2>Payment ID: <?php echo $payment_id; ?></h2>
-    <h2>Payment Gross: <?php echo '$'.$paymentRow['payment_gross'].' '.$paymentRow['currency_code']; ?></h2>
-    <?php if($orderItemResult->num_rows > 0){ ?>
-    <h3>Order Items</h3>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>HOME</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="user/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link href="user/assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="user/assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+</head>
+<body>
+    <div class="navbar navbar-inverse set-radius-zero" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">
+
+                    <img src="user/assets/img/opslogo.png" />
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- LOGO HEADER END-->
+    <section class="menu-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                         <li><a href="user/login.php">USER</a></li>
+                         <li><a href="admin/login.php">ADMIN</a></li>
+                       </ul>
+                         <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="user/login.php" >HOME</a></li>
+                            <li><a href="admin/login.php">USER MANUAL</a></li>
+                            <li><a href="admin/login.php">ABOUT</a></li>
+                            <li><a href="admin/login.php">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     <!-- MENU SECTION END-->
+    <div class="content-wrapper">
+         <div class="container">
+        <div class="row pad-botm">
+            <div class="col-md-12">
+                <h4 class="header">Online Printing System</h4>
+
+                </div>
+     </div>
+
+     <h1>Your payment has been successful.</h1>
+     <h2>Payment ID: <?php echo $payment_id; ?></h2>
+     <h2>Payment Gross: <?php echo '$'.$paymentRow['payment_gross'].' '.$paymentRow['currency_code']; ?></h2>
+     <?php if($orderItemResult->num_rows > 0){ ?>
+     <h3>Order Items</h3>
+
     <table class="table table-striped table-bordered table-hover" style="width:50%">
         <tr>
             <th>#</th>
@@ -52,3 +124,28 @@ if(!empty($txn_id)){
     <h1>Your payment has failed.</h1>
 <?php } ?>
 <a href="https://ops-eprint.herokuapp.com/user/upload1.php">Back to home</a>
+
+</div>
+</div>
+
+<section class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+               &copy; Designed by : OPS
+            </div>
+
+        </div>
+    </div>
+</section>
+  <!-- FOOTER SECTION END-->
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- CORE JQUERY  -->
+<script src="user/assets/js/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="user/assets/js/bootstrap.js"></script>
+  <!-- CUSTOM SCRIPTS  -->
+<script src="user/assets/js/custom.js"></script>
+
+</body>
+</html>
