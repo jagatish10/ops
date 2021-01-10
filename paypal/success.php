@@ -51,4 +51,4 @@ if(!empty($txn_id)){
 <?php } }else{ ?>
     <h1>Your payment has failed.</h1>
 <?php } ?>
-<a href="http://localhost/ops/user/upload1.php">Back to home</a>
+<a href="https://ops-eprint.herokuapp.com/user/upload1.php">Back to home</a>
