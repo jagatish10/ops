@@ -161,61 +161,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
               </div>
             </div>
 
-                  <!-- <div class="col-md-9 col-sm-9 col-xs-6">
-                      <div class="panel panel-success">
 
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover" width=100% align=center>
-									<thead>
-										<tr bgcolor="#00ccff"><td colspan=13 align="center" style="font-weight:bold"><strong>STATUS</strong></td></tr>
-									</thead>
-									<tbody>
-										<tr bgcolor="#999999" >
-											<td style="font-weight:bold"><div align="center"><strong>#</strong></div></td>
-											<td style="font-weight:bold"><div align="center"><strong>USERNAME</strong></div></td>
-											<td style="font-weight:bold"><div align="center"><strong>PRINTING STATUS</strong></div></td>
-											<td style="font-weight:bold"><div align="center"><strong>TOTAL COST</strong></div></td>
-                      <td style="font-weight:bold"><div align="center"><strong>FILENAME</strong></div></td>
-                      <td style="font-weight:bold"><div align="center"><strong>PAYMENT</strong></div></td>
-                      <td style="font-weight:bold"><div align="center"><strong>RECEIPT</strong></div></td>
-										</tr>
-<?php
-$counter=1;
-while($row=mysqli_fetch_array($kuirirun)){
-if($row[5]=='Successful'){
-?>
-										<tr align="center">
-											<td><?php echo $counter;?></td>
-											<td><?php echo $row[0];?></td>
-											<td><?php echo $row[2];?></td>
-                      <td><?php echo $row[3];?></td>
-                      <td><?php echo $row[4];?></td>
-                      <td><?php echo $row[5];?></td>
-                      <td><form method="post" action="receipt1.php" enctype="multipart/form-data">
-
-                          <input type="hidden" name="username" value="<?php echo $row[0]; ?>">
-                          <input type="hidden" name="total_cost" value="<?php echo $row[3]; ?>">
-                          <input type="hidden" name="txn_id" value="<?php echo $row[8]; ?>">
-                          <input type="hidden" name="file" value="<?php echo $row[4]; ?>">
-                          <input type="hidden" name="collection" value="<?php echo $row[7]; ?>">
-                          <input type="hidden" name="payment" value="<?php echo $row[5]; ?>">
-                          <input type="hidden" name="payer_email" value="<?php echo $row[9]; ?>">
-
-                          <input type="image" name="submit"
-                          <img alt="" width="30% "src="../images/receipt2.png"/>
-                      </form></td>
-<?php
-$counter++;
-?>
-										</tr>
-<?php }} ?>
-									</tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-             </div> -->
 
              </div>
 
