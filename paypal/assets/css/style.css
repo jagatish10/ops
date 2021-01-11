@@ -172,10 +172,10 @@ body {
 
 }
 .menu-section {
-  background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
+  background: linear-gradient(#6b6b83, #ffffff, #6b6b83);
   background-size: 400% 400%;
-  -webkit-animation: gradient 8s ease infinite;
-          animation: gradient 8s ease infinite;
+  /* -webkit-animation: gradient 8s ease infinite;
+          animation: gradient 8s ease infinite; */
     border-bottom:5px solid #FFF;
     width:100%
 }
@@ -187,8 +187,8 @@ background-color: #FFF;
 border-color: rgba(155, 153, 153, 0.23);
 background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
 background-size: 400% 400%;
--webkit-animation: gradient 8s ease infinite;
-        animation: gradient 8s ease infinite;
+/* -webkit-animation: gradient 8s ease infinite;
+        animation: gradient 8s ease infinite; */
 
 }
 
