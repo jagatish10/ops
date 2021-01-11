@@ -66,7 +66,7 @@ $currentuser=$_SESSION['ADMIN_ID'];
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama1.php" class="menu-top-active">MENU</a></li>
+                            <li><a href="../admin/utama1.php">ACCESSIBILITY</a></li>
                         </ul>
 						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
 
