@@ -23,7 +23,7 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>ATTACH FILE</title>
+    <title>EDIT ADMIN</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -32,6 +32,23 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+    <link rel="icon" type="image/png" href="assets/images/icons/favicon.ico"/>
+  <!--===============================================================================================-->
+  <!--  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css"> -->
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="assets/css/util1.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet" media="all">
 
 </head>
 <body>
@@ -44,8 +61,9 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand">
-
-                    <img src="assets/img/tdt.png" />
+                  <div class="login100-pic js-tilt" data-tilt>
+                  <img src="assets/img/opslogo.png"/>
+                  </div>
                 </a>
             </div>
 			<div class="right-div">
@@ -60,9 +78,9 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama.php" class="menu-top-active">ADMIN HOMEPAGE</a></li>
+                            <li><a href="utama.php">ADMIN HOMEPAGE</a></li>
                         </ul>
-						<ul id="menu-top" class="nav navbar-nav navbar-left">
+						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
                             <li><a><b>Hi,<i><?php echo $_SESSION['ADMIN_USERNAME'];?></b></a></i></li>
                         </ul>
                     </div>
@@ -76,13 +94,122 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">EDIT MY ADMIN PROFILE</h4>
+                <h4 class="header"></h4>
 
                             </div>
 
         </div>
 
-        <div class="col-md-7 col-sm-5 col-xs-6">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">EDIT MY PROFILE</h2>
+                </div>
+                <div class="card-body">
+
+
+                  <form action=proseseditadmin.php method=post enctype="multipart/form-data">
+
+
+                      <div class="form-row">
+                        <div class="name">Username</div>
+                        <div class="value">
+                        <div class="wrap-input100 validate-input">
+                          <input class="input100"  readonly name="username" size="30" type="text" required="required" value="<?php echo $currentuser;?>">
+                          <span class="focus-input100"></span>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form-row m-b-55">
+                        <div class="name">Name</div>
+                        <div class="value">
+                            <div class="row row-space">
+                                <div class="col-2">
+                                  <div class="wrap-input100 validate-input">
+                                    <input class="input100" name="firstname" size="30" type="text" required="required" value="<?php echo $firstname;?>">
+                                    <span class="focus-input100"></span>
+                                  </div>
+                                </div>
+
+                                <div class="col-2">
+                                  <div class="wrap-input100 validate-input">
+                                    <input class="input100" name="lastname" size="30" type="text" required="required" value="<?php echo $lastname;?>">
+                                    <span class="focus-input100"></span>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="name">Email</div>
+                        <div class="value">
+                          <div class="wrap-input100 validate-input">
+                            <input class="input100"  name="email" size="30" type="text" required="required" value="<?php echo $email;?>">
+                            <span class="focus-input100"></span>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="name">Phone</div>
+                        <div class="value">
+                          <div class="wrap-input100 validate-input">
+                            <input class="input100" name="contactnumber" size=30 maxlength=11 type="text" required="required" value="<?php echo $contactnumber;?>">
+                            <span class="focus-input100"></span>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="name">Upload<br>Profile<br>Picture</div>
+                        <div class="value">
+                          <div class="input-group">
+                            <input input type="file" name="image">
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="name">Password</div>
+                        <div class="value">
+                          <div class="wrap-input100 validate-input">
+                            <input class="input100"  name="password" size=30 maxlength=8 type="text" required="required" value="<?php echo $password;?>">
+                            <span class="focus-input100"></span>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="name">Confirm Password</div>
+                        <div class="value">
+                          <div class="wrap-input100 validate-input">
+                            <input class="input100" name="confirmpassword" size=30 maxlength=8 type="text" required="required" value="<?php echo $password;?>">
+                            <span class="focus-input100"></span>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input class="btn btn--radius-2 btn--red" type="submit" name="submit" value="UPDATE" onclick="return confirm('Are you sure you want to update ?')"</input>
+                    </div>
+
+
+                    </form>
+              </div>
+              </div>
+
+
+             </div>
+
+        <!-- <div class="col-md-7 col-sm-5 col-xs-6">
             <div class="panel panel-success">
 
               <div class="panel-body">
@@ -132,18 +259,18 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
                   </div>
               </div>
           </div>
-   </div>
+   </div> -->
 
              </div>
 
     </div>
-    </div>
+
      <!-- CONTENT-WRAPPER SECTION END-->
     <section class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                   &copy; Designed by : TDT
+                   &copy; Designed by : OPS
                 </div>
 
             </div>
@@ -157,6 +284,23 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
     <script src="assets/js/bootstrap.js"></script>
       <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
+
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="assets/vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
+
+    <script >
+      $('.js-tilt').tilt({
+        scale: 1.1
+      })
+    </script>
+  <!--===============================================================================================-->
+    <script src=assets/"js/main.js"></script>
 
 </body>
 </html>
