@@ -19,7 +19,7 @@ if(isset($_POST['search']))
 
 function filterTable($query)
 {
-    $connect = mysqli_connect("localhost", "root", "", "ops");
+    $connect = mysqli_connect("sql12.freesqldatabase.com", "sql12386185", "dWtsJEfg3j", "sql12386185");
     $filter_Result = mysqli_query($connect, $query);
     return $filter_Result;
 }
@@ -190,53 +190,9 @@ function filterTable($query)
                   </div>
               </div>
             </div>
+          </div>
+        </div>
 
-
-
-
-
-				  <!-- <div class="col-md-7 col-sm-7 col-xs-7">
-                      <div class="panel panel-success">
-
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                              <form action="waitingpayment.php" method="post">
-                                <input type="text" name="valueToSearch" placeholder="Value To Search"><br><br>
-                                <input type="submit" name="search" value="Filter"><br><br>
-<table class="table table-striped table-bordered table-hover">
-									<thead>
-										<tr bgcolor="#00ccff"><td colspan=5 style="font-weight:bold" align=center>Printing Order</td></tr>
-										<tr align=center bgcolor="#999999"><td style="font-weight:bold">USERNAME</td><td style="font-weight:bold">FILENAME</td><td style="font-weight:bold">PRINTING STATUS</td><td style="font-weight:bold">PAYMENT</td><td style="font-weight:bold">PROCEED</td></tr>
-									</thead>
-									<tbody>
-
-<?php while($row = mysqli_fetch_array($search_result)):?>
-<tr align=center><td><?php echo $row[0];?></td><td><?php echo $row[2];?></td><td>Printing</td><td><?php echo $row[12];?></td>
-<form action="" id="frm" method=post>
-<td style="display:none"><input type="hidden" name="Username" value="<?php echo $row[0];?>"></td>
-<td style="display:none"><input type="hidden" name="Order_Id" value="<?php echo $row[1];?>"></td>
-<td style="display:none"><input type="hidden" name="Download" value="<?php echo $row[2];?>"></td>
-<td style="display:none"><input type="hidden" name="Copies" value="<?php echo $row[3];?>"></td>
-<td style="display:none"><input type="hidden" name="totalp" value="<?php echo $row[4];?>"></td>
-<td style="display:none"><input type="hidden" name="Colour" value="<?php echo $row[5];?>"></td>
-<td style="display:none"><input type="hidden" name="Order" value="<?php echo $row[6];?>"></td>
-<td style="display:none"><input type="hidden" name="Layout" value="<?php echo $row[7];?>"></td>
-<td style="display:none"><input type="hidden" name="Sheet" value="<?php echo $row[8];?>"></td>
-<td style="display:none"><input type="hidden" name="Collection" value="<?php echo $row[10];?>"></td>
-<td style="display:none"><input type="hidden" name="Comment" value="<?php echo $row[11];?>"></td>
-<td style="display:none"><input type="hidden" name="Payment" value="<?php echo $row[12];?>"></td>
-<td><input type="submit" name="submit" value="FINISH" formaction="receipt.php"/></form></tr>
-<?php endwhile;?>
-									</tbody>
-                  </table>
-                </form>
-                            </div>
-                        </div>
-                    </div>
-             </div>
-             </div>
-
-    </div> -->
 
      <!-- CONTENT-WRAPPER SECTION END-->
     <section class="footer-section">
