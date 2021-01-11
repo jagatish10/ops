@@ -9,6 +9,6 @@ if(!session_start()){
 if(session_destroy()){
 	$sql="UPDATE user SET log_in='Offline' WHERE USER_NAME='$currentuser'";
 	$quer=mysqli_query($dbconn,$sql);
-	header("Location:login.php");
+	header("Location:../index.php");
 };
 ?>
