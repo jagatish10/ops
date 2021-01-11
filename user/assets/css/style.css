@@ -172,10 +172,10 @@ body {
 
 }
 .menu-section {
-  background: linear-gradient(-90deg, #aa4b6b,#6b6b83,#3b8d99);
+  background: linear-gradient(#6b6b83, #ffffff, #6b6b83);
   background-size: 400% 400%;
-  -webkit-animation: gradient 8s ease infinite;
-          animation: gradient 8s ease infinite;
+  /* -webkit-animation: gradient 8s ease infinite;
+          animation: gradient 8s ease infinite; */
     border-bottom:5px solid #FFF;
     width:100%
 }
@@ -217,10 +217,9 @@ height: 60px;
 
 }
 
-.elfsight-app-ba6162b0-283d-43e9-8715-8b2c50e9cba2 {
-  height: 200px;
-  width: 30%;
-  margin: left;
+.elfsight-app-ba6162b0-283d-43e9-8715-8b2c50e9cba2{
+  width:50%;
+  margin: auto;
 }
 
 .chat-widget-main {
