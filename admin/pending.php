@@ -19,7 +19,7 @@ if(isset($_POST['search']))
 
 function filterTable($query)
 {
-    $connect = mysqli_connect("sql12.freesqldatabase.com", "sql12386185", "dWtsJEfg3j", "sql12386185");
+    $connect = mysqli_connect("localhost", "root", "", "ops");
     $filter_Result = mysqli_query($connect, $query);
     return $filter_Result;
 }
@@ -35,7 +35,7 @@ function filterTable($query)
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>ORDERS</title>
+    <title>PENDING ORDERS</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -44,6 +44,27 @@ function filterTable($query)
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
+
+      <!-- <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css"> -->
+
+      <link rel="stylesheet" type="text/css" href="assets/css/util1.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/main1.css">
+
+      <link rel="stylesheet" type="text/css" href="assets/css/table.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/table2.css">
+
+
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+      <!-- <link href="assets/css/form.css" rel="stylesheet" media="all"> -->
+
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
 <body>
@@ -56,8 +77,9 @@ function filterTable($query)
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand">
-
-                    <img src="assets/img/tdt.png" />
+                  <div class="login100-pic js-tilt" data-tilt>
+                  <img src="assets/img/opslogo.png"/>
+                  </div>
                 </a>
             </div>
 			<div class="right-div">
@@ -72,16 +94,16 @@ function filterTable($query)
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama.php" class="menu-top-active">MENU</a></li>
+                            <li><a href="utama1.php">ACCESSIBILITY</a></li>
                         </ul>
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                           <li><a href="../admin/laporan.php" >Overall</a></li>
-                          <li><a href="../admin/pending.php" >Pending</a></li>
+                          <li><a href="../admin/pending.php" class="menu-top-active" >Pending</a></li>
                           <li><a href="../admin/waitingpayment.php">Waiting for Payment</a></li>
                           <li><a href="../admin/printingorder.php">Printing</a></li>
                           <li><a href="../admin/finished.php">Finished</a></li>
                        </ul>
-						<ul id="menu-top" class="nav navbar-nav navbar-left">
+						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
                             <li><a>Hi,<i><?php echo $_SESSION['ADMIN_USERNAME'];?></a></i></li>
                         </ul>
                     </div>
@@ -95,60 +117,88 @@ function filterTable($query)
          <div class="container">
         <div class="row pad-botm">
             <div class="col-md-12">
-                <h4 class="header-line">LIST OF ORDERS</h4>
+                <h4 class="header">LIST OF PENDING ORDERS</h4>
 
                             </div>
 
         </div>
-				  <div class="col-md-7 col-sm-5 col-xs-7">
-                      <div class="panel panel-success">
 
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                              <form action="pending.php" method="post">
-                                <input type="text" name="valueToSearch" placeholder="Value To Search"><br><br>
-                                <input type="submit" name="search" value="Filter"><br><br>
-                                <table class="table table-striped table-bordered table-hover">
-									<thead>
-										<tr bgcolor="#00ccff"><td colspan=5 style="font-weight:bold" align=center>Pending Order</td></tr>
-										<tr align=center bgcolor="#999999"><td style="font-weight:bold">USERNAME</td><td style="font-weight:bold">FILENAME</td><td style="font-weight:bold">PRINTING STATUS</td><td style="font-weight:bold">PAYMENT</td><td style="font-weight:bold">PROCEED</td></tr>
-									</thead>
-									<tbody>
-<?php while($row = mysqli_fetch_array($search_result)):?>
-<tr align=center><td><?php echo $row[0];?></td><td><?php echo $row[2];?></td><td>Pending</td><td><?php echo $row[12];?></td>
-<form action="" id="frm" method=post>
-<td style="display:none"><input type="hidden" name="Username" value="<?php echo $row[0];?>"></td>
-<td style="display:none"><input type="hidden" name="Order_Id" value="<?php echo $row[1];?>"></td>
-<td style="display:none"><input type="hidden" name="Download" value="<?php echo $row[2];?>"></td>
-<td style="display:none"><input type="hidden" name="Copies" value="<?php echo $row[3];?>"></td>
-<td style="display:none"><input type="hidden" name="totalp" value="<?php echo $row[4];?>"></td>
-<td style="display:none"><input type="hidden" name="Colour" value="<?php echo $row[5];?>"></td>
-<td style="display:none"><input type="hidden" name="Order" value="<?php echo $row[6];?>"></td>
-<td style="display:none"><input type="hidden" name="Layout" value="<?php echo $row[7];?>"></td>
-<td style="display:none"><input type="hidden" name="Sheet" value="<?php echo $row[8];?>"></td>
-<td style="display:none"><input type="hidden" name="Collection" value="<?php echo $row[10];?>"></td>
-<td style="display:none"><input type="hidden" name="Comment" value="<?php echo $row[11];?>"></td>
-<td style="display:none"><input type="hidden" name="Payment" value="<?php echo $row[12];?>"></td>
-<td><input type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td></form></tr>
-<?php endwhile;?>
-									</tbody>
-                                </table>
-                                </form>
+        <div class="limiter">
+          <div class="container-table100" style="min-height:auto">
+            <div class="wrap-table100">
+              <div class="table100 ver1 m-b-110">
+                <form action="pending.php" method="post">
 
-                            </div>
-                        </div>
-                    </div>
-             </div>
+                  <div class="wrap-input100 validate-input">
+                    <input class="input100"type="text" name="valueToSearch" placeholder="TYPE TO FILTER">
+                    <span class="focus-input100" style="color:white"></span>
+                    <br><input class="login100-form-btn" type="submit" name="search" value="Filter">
+                    <span class="symbol-input100">
+                    </span>
+                  </div><br><br>
+
+
+                <table data-vertable="ver1">
+
+
+                  <thead>
+                    <tr class="row100 head">
+                      <th class="column100 column1" data-column="column1">USERNAME</th>
+                      <th class="column100 column2" data-column="column2">FILENAME</th>
+                      <th class="column100 column3"  data-column="column3">PRINTING STATUS</th>
+                      <th class="column100 column4"  data-column="column4">PAYMENT</th>
+                      <th class="column100 column5"  data-column="column5">PROCEED</th>
+                    </tr>
+                  </thead>
+                  <?php while($row = mysqli_fetch_array($search_result)):?>
+                  <form action="" id="frm" method=post>
+                  <tbody>
+                    <tr class="row100">
+                      <td class="column100 column1" data-column="column1"><input type="hidden" name="Username" value="<?php echo $row[0];?>"><?php echo $row[0];?></td>
+                      <td class="column100 column6" data-column="column6" style="display:none"><input type="hidden" name="Order_Id" value="<?php echo $row[1];?>"</td>
+                      <td class="column100 column2" data-column="column2"><input type="hidden" name="Download" value="<?php echo $row[2];?>"><?php echo $row[2];?></td>
+                      <td class="column100 column3" data-column="column3">Pending</td>
+                      <td class="column100 column7" data-column="column7" style="display:none"><input type="hidden" name="Download" value="<?php echo $row[2];?>"</td>
+                      <td class="column100 column8" data-column="column8" style="display:none"><input type="hidden" name="Copies" value="<?php echo $row[3];?>"</td>
+                      <td style="display:none"><input type="hidden" name="totalp" value="<?php echo $row[4];?>"</td>
+                      <td class="column100 column9" data-column="column9" style="display:none"><input type="hidden" name="Colour" value="<?php echo $row[5];?>"</td>
+                      <td class="column100 column10" data-column="column10" style="display:none"><input type="hidden" name="Order" value="<?php echo $row[6];?>"></td>
+                      <td class="column100 column11" data-column="column11" style="display:none"><input type="hidden" name="Layout" value="<?php echo $row[7];?>"></td>
+                      <td class="column100 column12" data-column="column12" style="display:none"><input type="hidden" name="Sheet" value="<?php echo $row[8];?>"></td>
+                      <td class="column100 column13" data-column="column13" style="display:none"><input type="hidden" name="Collection" value="<?php echo $row[10];?>"</td>
+                      <td style="display:none"><input type="hidden" name="Comment" value="<?php echo $row[11];?>"</td>
+                      <td class="column100 column4" data-column="column4"><input type="hidden" name="Payment" value="<?php echo $row[12];?>"><?php echo $row[12];?></td>
+
+
+                      <td class="column100 column5" data-column="column5"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td>
+                      </form>
+
+                    </tr>
+                  <?php endwhile;?>
+                  </tbody>
+
+
+
+                </table>
+                    </form>
+              </div>
+
+
+
+                  </div>
+              </div>
+            </div>
+
              </div>
 
     </div>
-    </div>
+
      <!-- CONTENT-WRAPPER SECTION END-->
     <section class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                   &copy; Designed by : TDT
+                   &copy; Designed by : OPS
                 </div>
 
             </div>
@@ -158,10 +208,28 @@ function filterTable($query)
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY  -->
     <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
+    <!-- BOOTSTRAP SCRIPTS  -->4
     <script src="assets/js/bootstrap.js"></script>
       <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
+
+    <script src="assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="assets/vendor/bootstrap/js/popper.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="assets/vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+    <script src="assets/vendor/tilt/tilt.jquery.min.js"></script>
+
+    <script >
+      $('.js-tilt').tilt({
+        scale: 1.1
+      })
+    </script>
+
+  <script src=assets/"js/main.js"></script>
+
 
 </body>
 </html>
