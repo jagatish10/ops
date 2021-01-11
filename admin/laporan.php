@@ -98,10 +98,10 @@ function filterTable($query)
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama1.php" class="menu-top-active">MENU</a></li>
+                            <li><a href="utama1.php">ACCESSIBILITY</a></li>
                         </ul>
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                          <li><a href="../admin/laporan.php" >Overall</a></li>
+                          <li><a href="../admin/laporan.php" class="menu-top-active">Overall</a></li>
                           <li><a href="../admin/pending.php" >Pending</a></li>
                           <li><a href="../admin/waitingpayment.php">Waiting for Payment</a></li>
                           <li><a href="../admin/printingorder.php">Printing</a></li>
