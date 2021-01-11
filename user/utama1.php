@@ -74,7 +74,7 @@ $name=$row[1];
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                           <ul id="menu-top" class="nav navbar-nav navbar-right">
                             <li><a href="../user/utama.php" >USER HOME</a></li>
-                            <li><a href="../user/utama1.php" >FILE MANAGEMENT</a></li>
+                            <li><a href="../user/utama1.php" class="menu-top-active" >FILE MANAGEMENT</a></li>
                          </ul>
                         </ul>
 						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
