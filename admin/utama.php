@@ -78,7 +78,7 @@ $query=mysqli_query($dbconn,"SELECT * FROM admin WHERE ADMIN_USERNAME='$currentu
                     <div class="navbar-collapse collapse ">
                       <ul id="menu-top" class="nav navbar-nav navbar-right">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                          <li><a href="../admin/utama.php" >ADMIN HOME</a></li>
+                          <li><a href="../admin/utama.php" class="menu-top-active">ADMIN HOME</a></li>
                           <li><a href="../admin/utama1.php" >ACCESSIBILITY</a></li>
                        </ul>
                       </ul>
