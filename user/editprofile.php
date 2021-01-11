@@ -79,7 +79,7 @@ $currentuser=$_SESSION['USER_NAME'];
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama.php" class="menu-top-active">USER HOMEPAGE</a></li>
+                            <li><a href="utama.php" >USER HOMEPAGE</a></li>
                         </ul>
 						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
 
