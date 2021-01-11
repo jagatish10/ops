@@ -34,7 +34,7 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
                 </button>
                 <a class="navbar-brand">
 
-                    <img src="assets/img/tdt.png" />
+                    <img src="assets/img/opslogo.png" />
                 </a>
             </div>
 			<div class="right-div">
@@ -109,7 +109,7 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                   &copy; Designed by : TDT
+                   &copy; Designed by : OPS
                 </div>
 
             </div>
