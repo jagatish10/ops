@@ -79,7 +79,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama1.php" class="menu-top-active">MENU</a></li>
+                          <li><a href="utama1.php">FILE MANAGEMENT</a></li>
                         </ul>
 						<ul id="menu-top" class="nav navbar-nav navbar-left"  style="padding-left:150px">
                             <li><a><b>Hi,<i><?php echo $name;?></b></a></i></li>
