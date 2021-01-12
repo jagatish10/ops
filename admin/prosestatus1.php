@@ -83,8 +83,8 @@ $currentuser=$_SESSION['ADMIN_ID'];
 	$persheet=$_POST['sheet'];
   $totalcost=$_POST['total'];
 
-	$kuiri=mysqli_query($dbconn,"UPDATE stat SET STAT_STATUS='".$status."',STAT_TOTALCOST='".$totalcost."' WHERE STAT_ID='".$matricnumber."' AND FILE='".$targetfile."'");
-	$kuiri2=mysqli_query($dbconn,"UPDATE orde SET ORDE_COPIES='".$copy."',ORDE_COLOUR='".$color."',TOTAL_PAGE='".$totalp."',ORDE_PAGEORDER='".$order."',ORDE_LAYOUT='".$layout."',ORDE_PAGEPERSHEET='".$persheet."' WHERE USER_NAME='".$matricnumber."' AND ORDE_SELECTFILE='".$targetfile."'");
+	$kuiri=mysqli_query($dbconn,"UPDATE stat SET STAT_STATUS='".$status."',STAT_TOTALCOST='".$totalcost."',PAYMENT='Pending' WHERE STAT_ID='".$matricnumber."' AND FILE='".$targetfile."'");
+	$kuiri2=mysqli_query($dbconn,"UPDATE orde SET ORDE_COPIES='".$copy."',ORDE_COLOUR='".$color."',TOTAL_PAGE='".$totalp."',ORDE_PAGEORDER='".$order."',ORDE_LAYOUT='".$layout."',ORDE_PAGEPERSHEET='".$persheet."',PAYMENT='Pending' WHERE USER_NAME='".$matricnumber."' AND ORDE_SELECTFILE='".$targetfile."'");
   echo
 '<p>Status Successfully Send! </p>
 <p> <a href=""></a> .</p>';
