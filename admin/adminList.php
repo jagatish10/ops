@@ -108,8 +108,8 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Contineu");
                       <th class="column100 column1" data-column="column1">USERNAME</th>
                       <th class="column100 column2" data-column="column2">FIRST NAME</th>
                       <th class="column100 column3" data-column="column3">LAST NAME</th>
-                      <th class="column100 column4" data-column="column4">CONTACT NUMBER</th>
-                      <th class="column100 column5" data-column="column5">EMAIL</th>
+                      <th class="column100 column4" data-column="column4">EMAIL</th>
+                      <th class="column100 column5" data-column="column5">CONTACT NUMBER</th>
                       <th class="column100 column6" data-column="column6">DELETE</th>
                     </tr>
                   </thead>
