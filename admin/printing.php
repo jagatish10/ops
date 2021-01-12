@@ -129,7 +129,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
                                                     var totalprice= (+documentprice) + (+deliverycharge);
                                                     //var charge=f.charge.options[f.charge.selectedIndex].value;
                                                     //var total=totalp*copies*price;
-                                                    f.total.value=totalprice+".00";
+                                                    f.total.value=totalprice;
                                                     //f.due.value=myr(0.00*total);
                                                   }
                        </script>
