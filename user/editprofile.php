@@ -162,7 +162,7 @@ $currentuser=$_SESSION['USER_NAME'];
                         <div class="name">Phone</div>
                         <div class="value">
                           <div class="wrap-input100 validate-input">
-                            <input class="input100" name="contactnumber" size=30 maxlength=11 type="tel" pattern="[0-9]{3}-[0-9]{8}" required="required" value="<?php echo $contactnumber;?>">
+                            <input class="input100" name="contactnumber" size=30 maxlength=11 type="tel" pattern="[0-9]{3}-[0-9]{7}" required="required" value="<?php echo $contactnumber;?>">
                             <span class="focus-input100"></span>
                           </div>
                         </div>
