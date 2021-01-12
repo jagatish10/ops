@@ -239,7 +239,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
           <div class="name">DOCUMENT PRICE</div>
           <div class="value">
             <div class="wrap-input100 ">
-              <input class="input100" type="text" name="price" required="required"/></input>
+              <input class="input100" type="number" name="price" step=".01" required="required"/></input>
               <span class="focus-input100"></span>
             </div>
           </div>
@@ -249,7 +249,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
           <div class="name">DELIVERY CHARGE</div>
           <div class="value">
             <div class="wrap-input100 ">
-              <input class="input100" type="text" name="dprice" required="required" /></input>
+              <input class="input100" type="number" name="dprice" step=".01" required="required" /></input>
               <span class="focus-input100"></span>
             </div>
           </div>
