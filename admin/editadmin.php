@@ -148,7 +148,7 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
                         <div class="name">Email</div>
                         <div class="value">
                           <div class="wrap-input100 validate-input">
-                            <input class="input100"  name="email" size="30" type="text" required="required" value="<?php echo $email;?>">
+                            <input class="input100"  name="email" size="30" type="email" required="required" value="<?php echo $email;?>">
                             <span class="focus-input100"></span>
                           </div>
                         </div>
@@ -159,7 +159,7 @@ $currentuser=$_SESSION['ADMIN_USERNAME'];
                         <div class="name">Phone</div>
                         <div class="value">
                           <div class="wrap-input100 validate-input">
-                            <input class="input100" name="contactnumber" size=30 maxlength=11 type="text" required="required" value="<?php echo $contactnumber;?>">
+                            <input class="input100" name="contactnumber" size=30 maxlength=11 type="tel" pattern="[0-9]{3}-[0-9]{8}" required="required" value="<?php echo $contactnumber;?>">
                             <span class="focus-input100"></span>
                           </div>
                         </div>
