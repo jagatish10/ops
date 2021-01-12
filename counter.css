@@ -1,0 +1,34 @@
+.counter
+{
+    /* background-color: #eaecf0; */
+    text-align: center;
+}
+.process,.delivery,.branches,.service
+{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.counter-count
+{
+    font-size: 18px;
+    background-color: #341033;
+    border-radius: 50%;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+.process-p,.delivery-p,.branches-p,.service-p
+{
+    font-size: 24px;
+    color: #fff;
+    line-height: 34px;
+}
