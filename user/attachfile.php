@@ -123,7 +123,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
                             <div class="name">COPIES</div>
                             <div class="value">
                               <div class="wrap-input100 ">
-                                <input class="input100" type="text" name="Copies" required="required" />
+                                <input class="input100" type="number" name="Copies" required="required" />
                                 <span class="focus-input100"></span>
                               </div>
                             </div>
@@ -133,7 +133,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
                             <div class="name">TOTAL PAGE</div>
                             <div class="value">
                               <div class="wrap-input100 ">
-                                <input class="input100"  type="text" name="totalp" required="required" />
+                                <input class="input100"  type="number" name="totalp" required="required" />
                                 <span class="focus-input100"></span>
                               </div>
                             </div>
