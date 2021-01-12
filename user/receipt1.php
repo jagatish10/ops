@@ -86,7 +86,7 @@ $t=time();
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama1.php" class="menu-top-active">MENU</a></li>
+                            <li><a href="utama1.php" class="menu-top-active">HOME</a></li>
                         </ul>
 						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
                             <li><a><b>Hi,<i><?php echo $currentuser;?></b></a></i></li>
