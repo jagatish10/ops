@@ -121,8 +121,8 @@ $query=mysqli_query($dbconn,"SELECT * FROM admin WHERE ADMIN_USERNAME='$currentu
               <br>
               <blockquote>
                 <h2><?php echo $row[3]; echo " "; echo $row[4];?></h2><br>
-                <h5><i class="fas fa-envelope" style="color:black"></i><?php echo " "; echo $row[5];?></h5><br>
-                <h5><i class="fa fa-phone" style="color:black"></i><?php echo " "; echo $row[6];?></h5>
+                <h5><i class="fas fa-envelope" style="color:black"></i><?php echo " "; echo $row[6];?></h5><br>
+                <h5><i class="fa fa-phone" style="color:black"></i><?php echo " "; echo $row[5];?></h5>
                 <br>
 
                 <div class="limiter">
