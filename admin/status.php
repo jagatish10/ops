@@ -84,7 +84,7 @@ $kuirirun1=mysqli_query($dbconn,$kuiri1) or die ("Can Not Continue");
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="utama1.php" class="menu-top-active">MENU</a></li>
+                            <li><a href="utama1.php" class="menu-top-active">HOME</a></li>
                         </ul>
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
                           <li><a href="../admin/laporan.php" >Overall</a></li>
