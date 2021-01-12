@@ -16,6 +16,7 @@
     <!-- CUSTOM STYLE  -->
     <link href="user/assets/css/style.css" rel="stylesheet" />
     <link href="slider.css" rel="stylesheet" />
+    <link href="counter.css" rel="stylesheet" />
     <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
@@ -35,6 +36,8 @@
     <link rel="stylesheet" type="text/css" href="user/assets/css/main1.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+      <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 
 </head>
@@ -83,9 +86,39 @@
         <div class="row pad-botm">
             <div class="col-md-12">
                 <!-- <h4 class="header">Online Printing System</h4> -->
-                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                <br><div class="elfsight-app-12a12f6c-8ab9-4948-a537-f4e3a0156c46"></div>
+                <div class="counter">
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="process">
+                    <p class="counter-count">3</p>
+                    <p class="process-p">Average Processing Days</p><i class="fas fa-calendar-day fa-2x" style="color:black "></i>
+                </div>
+            </div>
 
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="delivery">
+                    <p class="counter-count">3</p>
+                    <p class="delivery-p">Average Delivery Days</p><i class="fas fa-shipping-fast fa-2x" style="color:black"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="branches">
+                    <p class="counter-count">6</p>
+                    <p class="branches-p">Shops around Malaysia</p><i class="fas fa-store fa-2x" style="color:black"></i>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <div class="service">
+                    <p class="counter-count">24</p>
+                    <p class="service-p">Customer Service Hours</p><i class="fas fa-user-tie fa-2x" style="color:black"></i>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+</div>
 
   </div>
   <div class="container main-container">
@@ -174,6 +207,19 @@
       })
     </script>
 
+<script>
+$('.counter-count').each(function () {
+  $(this).prop('Counter',0).animate({
+      Counter: $(this).text()
+  }, {
+      duration: 1000,
+      easing: 'swing',
+      step: function (now) {
+          $(this).text(Math.ceil(now));
+      }
+  });
+});
+</script>
 
   <script src=user/assets/"js/main.js"></script>
 
