@@ -138,7 +138,7 @@
                                 <div class="name">Phone</div>
                                 <div class="value">
                                   <div class="wrap-input100 validate-input">
-                                    <input class="input100"  type="tel" name="contactnumber" pattern="[0-9]{3}-[0-9]{8}" required="required" placeholder="EG:012-3456789">
+                                    <input class="input100"  type="tel" name="contactnumber" pattern="[0-9]{3}-[0-9]{7}" required="required" placeholder="EG:012-3456789">
                                     <span class="focus-input100"></span>
                                   </div>
                                 </div>
