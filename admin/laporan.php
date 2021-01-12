@@ -183,9 +183,9 @@ function filterTable($query)
 
                       <td class="column100 column11" data-column="column11"><?php echo $row[9];?></td>
 
-                      <td class="column100 column12" data-column="column12"><input type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td>
-                      <td class="column100 column12" data-column="column12"><input type="submit" name="submit" value="PRINT" formaction="status.php"/></td>
-                      <td class="column100 column12" data-column="column12"><input type="submit" name="submit" value="FINISH" formaction="receipt.php"/></td>
+                      <td class="column100 column12" data-column="column12"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td>
+                      <td class="column100 column12" data-column="column12"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PRINT" formaction="status.php"/></td>
+                      <td class="column100 column12" data-column="column12"><input class="btn btn-danger pull-right" type="submit" name="submit" value="FINISH" formaction="receipt.php"/></td>
                       </form>
 
                     </tr>
