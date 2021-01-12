@@ -128,7 +128,7 @@
                                 <div class="name">Email</div>
                                 <div class="value">
                                   <div class="wrap-input100 validate-input">
-                                    <input class="input100"  type="text" name="email" required="required" placeholder="EG:mickey10@gmail.com">
+                                    <input class="input100"  type="email" name="email" required="required" placeholder="EG:mickey10@gmail.com">
                                     <span class="focus-input100"></span>
                                   </div>
                                 </div>
@@ -138,7 +138,7 @@
                                 <div class="name">Phone</div>
                                 <div class="value">
                                   <div class="wrap-input100 validate-input">
-                                    <input class="input100"  type="text" name="contactnumber" required="required" placeholder="EG:0123456789">
+                                    <input class="input100"  type="tel" name="contactnumber" pattern="[0-9]{3}-[0-9]{8}" required="required" placeholder="EG:012-3456789">
                                     <span class="focus-input100"></span>
                                   </div>
                                 </div>
