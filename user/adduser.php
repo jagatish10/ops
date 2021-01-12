@@ -63,7 +63,7 @@
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="home.php" class="menu-top-active">MENU</a></li>
+                            <li><a href="../index.php" class="menu-top-active">HOME</a></li>
                         </ul>
                     </div>
                 </div>
