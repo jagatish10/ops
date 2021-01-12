@@ -122,8 +122,8 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Contineu");
                       <td class="column100 column1" data-column="column1"><?php echo $row[1];?></td>
                       <td class="column100 column2" data-column="column2"><?php echo $row[3];?></td>
                       <td class="column100 column3" data-column="column3"><?php echo $row[4];?></td>
-                      <td class="column100 column4" data-column="column4"><?php echo $row[6];?></td>
-                      <td class="column100 column5" data-column="column5"><?php echo $row[5];?></td>
+                      <td class="column100 column4" data-column="column4"><?php echo $row[5];?></td>
+                      <td class="column100 column5" data-column="column5"><?php echo $row[6];?></td>
                       <td><form method="post" action="deleteadmin.php" enctype="multipart/form-data">
 
                           <input type="hidden" name="Username" value="<?php echo $row[1]; ?>">
