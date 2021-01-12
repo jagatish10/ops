@@ -244,7 +244,7 @@ $kuirirun1=mysqli_query($dbconn,$kuiri1) or die ("Can Not Continue");
   <input type="hidden" name="file_link" value="<?php echo $Download;?>">
                       <tr>
                         <td colspan=2 align="center"><input class="btn btn--radius-2 btn--red" type="submit" name="submit" required="required" value="UPDATE"/></td>
-                              <input type="hidden" name="filelink" value="<?php echo $Download;?>">
+                            	<a href="<?php echo $Download;?>" target="_blank"><img width="40"src="../images/printlogo.jpg">DOWNLOAD FILE</a>
                       </tr>
 
                 </form>
@@ -252,77 +252,7 @@ $kuirirun1=mysqli_query($dbconn,$kuiri1) or die ("Can Not Continue");
         </div>
     </div>
 
-				  <!-- <div class="col-md-7 col-sm-7 col-xs-7">
-                      <div class="panel panel-success">
 
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <form method="post" action="prosestatus.php">
-                                <table class="table table-striped table-bordered table-hover">
-									<tbody>
-                    <tr>
-                        <td style="font-weight:bold" align="right">USERNAME :</td>
-                      <td><input type="text" readonly name="Matricnumber" required="required" value="<?php echo $ID;?>"></td>
-                      </tr>
-                      <tr>
-										    <td style="font-weight:bold" align="right">COPIES :</td>
-											<td><input type="text" readonly name="amount" required="required" value="<?php echo $Copies;?>"></td>
-									    </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">TOTAL PAGE :</td>
-											<td><input type="text" readonly name="totalp" required="required" value="<?php echo $totalp;?>"></td>
-									    </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">COLOUR :</td>
-											<td><input type="text" readonly name="colour" required="required" value="<?php echo $Colour;?>"></td>
-									    </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">PAGE ORDER :</td>
-											<td><input type="text" readonly name="order" required="required" value="<?php echo $Order;?>"></td>
-									    </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">PAGE LAYOUT :</td>
-											<td><input type="text" readonly name="layout" required="required" value="<?php echo $Layout;?>"></td>
-									    </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">PAGE PER SHEET :</td>
-											<td><input type="text"  readonly name="sheet" required="required" value="<?php echo $PerSheet;?>"></td>
-									    </tr>
-                      <tr>
-                          <td style="font-weight:bold" align="right">ADDITIONAL COMMENTS :</td>
-                        <td><textarea readonly name="comment" rows="5" cols="40" value="<?php echo $Comment;?>"></textarea></td>
-                        </tr>
-                        <tr>
-                            <td style="font-weight:bold" align="right">TOTAL PRICE RM: </td>
-<?php
-while($row=mysqli_fetch_array($kuirirun1)){
-?>
-                          <td><input type="text" readonly value="<?php echo $row[0];?>"></td>
-<?php } ?>
-                          </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">CURRENT STATUS :</td>
-<?php
-while($row=mysqli_fetch_array($kuirirun)){
-?>
-											<td><input type="text" readonly value="<?php echo $row[0];?>"></td>
-<?php } ?>
-									    </tr>
-										<tr>
-										    <td style="font-weight:bold" align="right">UPDATING STATUS :</td>
-											<td><input type="text" readonly name="sts" value="Printing"/></td>
-									    </tr>
-<input type="hidden" name="filelink" value="<?php echo $Download;?>">
-										<tr>
-											<td colspan=2 align="center"><input type="submit" name="submit" required="required" value="UPDATE"/></td>
-										</tr>
-									</tbody>
-                                </table>
-								</form>
-                            </div>
-                        </div>
-                    </div>
-             </div> -->
              </div>
 
     </div>
