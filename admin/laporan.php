@@ -150,17 +150,18 @@ function filterTable($query)
                       <th class="column100 column1" data-column="column1">USERNAME</th>
                       <th class="column100 column2" data-column="column2">FILENAME</th>
                       <th class="column100 column3" style="display:none" data-column="column3">DOWNLOAD</th>
-                      <th class="column100 column4" style="display:none" data-column="column4">COPIES</th>
-                      <th class="column100 column5" style="display:none" data-column="column5">COLOUR</th>
-                      <th class="column100 column6" style="display:none" data-column="column6">PAGE ORDER</th>
-                      <th class="column100 column7" style="display:none" data-column="column7">PAGE LAYOUT</th>
-                      <th class="column100 column8" style="display:none" data-column="column8">PAGE PERSHEET</th>
-                      <th class="column100 column9" style="display:none" data-column="column9">COLLECTION</th>
-                      <th class="column100 column10" style="display:none" data-column="column10">PAYMENT</th>
-                      <th class="column100 column11" data-column="column11">RECIEVED DATE</th>
-                      <th class="column100 column12" data-column="column12" >PAYMENT<br>STATUS</th>
-                      <th class="column100 column13" data-column="column13" >PRINT<br>STATUS</th>
-                      <th class="column100 column14" data-column="column14" >FINISH<br>STATUS</th>
+                      <th class="column100 column4" data-column="column3">DOWNLOAD</th>
+                      <th class="column100 column5" style="display:none" data-column="column4">COPIES</th>
+                      <th class="column100 column6" style="display:none" data-column="column5">COLOUR</th>
+                      <th class="column100 column7" style="display:none" data-column="column6">PAGE ORDER</th>
+                      <th class="column100 column8" style="display:none" data-column="column7">PAGE LAYOUT</th>
+                      <th class="column100 column9" style="display:none" data-column="column8">PAGE PERSHEET</th>
+                      <th class="column100 column10" style="display:none" data-column="column9">COLLECTION</th>
+                      <th class="column100 column11" style="display:none" data-column="column10">PAYMENT</th>
+                      <th class="column100 column12" data-column="column11">RECIEVED DATE</th>
+                      <th class="column100 column13" data-column="column12" >PAYMENT<br>STATUS</th>
+                      <th class="column100 column14" data-column="column13" >PRINT<br>STATUS</th>
+                      <th class="column100 column15" data-column="column14" >FINISH<br>STATUS</th>
                     </tr>
                   </thead>
                   <?php while($row = mysqli_fetch_array($search_result)):?>
@@ -170,22 +171,22 @@ function filterTable($query)
                       <td class="column100 column1" data-column="column1"><input type="hidden" name="Username" value="<?php echo $row[0];?>"><?php echo $row[0];?></td>
                       <td class="column100 column2" data-column="column2" style="display:none"><input type="hidden" name="Order_Id" value="<?php echo $row[1];?>"</td>
                       <td class="column100 column3" data-column="column3"><input type="hidden" name="Download" value="<?php echo $row[2];?>"><?php echo $row[2];?></td>
-                      <td class="column100 column3" data-column="column3" style="display:none"><input type="hidden" name="Download" value="<?php echo $row[2];?>"</td>
-                      <td class="column100 column4" data-column="column4" style="display:none"><input type="hidden" name="Copies" value="<?php echo $row[3];?>"</td>
+                      <td class="column100 column4" data-column="column4"><input type="hidden" name="Download" value="<?php echo $row[2];?>"><a href="<?php echo $row[2];?>" target="_blank"><img width="40"src="../images/printlogo.jpg">DOWNLOAD FILE</a></td>
+                      <td class="column100 column5" data-column="column5" style="display:none"><input type="hidden" name="Copies" value="<?php echo $row[3];?>"</td>
                       <td style="display:none"><input type="hidden" name="totalp" value="<?php echo $row[4];?>"</td>
-                      <td class="column100 column5" data-column="column5" style="display:none"><input type="hidden" name="Colour" value="<?php echo $row[5];?>"</td>
-                      <td class="column100 column6" data-column="column6" style="display:none"><input type="hidden" name="Order" value="<?php echo $row[6];?>"></td>
-                      <td class="column100 column7" data-column="column7" style="display:none"><input type="hidden" name="Layout" value="<?php echo $row[7];?>"></td>
-                      <td class="column100 column8" data-column="column8" style="display:none"><input type="hidden" name="Sheet" value="<?php echo $row[8];?>"></td>
-                      <td class="column100 column9" data-column="column9" style="display:none"><input type="hidden" name="Collection" value="<?php echo $row[10];?>"</td>
+                      <td class="column100 column6" data-column="column6" style="display:none"><input type="hidden" name="Colour" value="<?php echo $row[5];?>"</td>
+                      <td class="column100 column7" data-column="column7" style="display:none"><input type="hidden" name="Order" value="<?php echo $row[6];?>"></td>
+                      <td class="column100 column8" data-column="column8" style="display:none"><input type="hidden" name="Layout" value="<?php echo $row[7];?>"></td>
+                      <td class="column100 column9" data-column="column9" style="display:none"><input type="hidden" name="Sheet" value="<?php echo $row[8];?>"></td>
+                      <td class="column100 column10" data-column="column10" style="display:none"><input type="hidden" name="Collection" value="<?php echo $row[10];?>"</td>
                       <td style="display:none"><input type="hidden" name="Comment" value="<?php echo $row[11];?>"</td>
-                      <td class="column100 column10" data-column="column10" style="display:none"><input type="hidden" name="Payment" value="<?php echo $row[12];?>"</td>
+                      <td class="column100 column11" data-column="column11" style="display:none"><input type="hidden" name="Payment" value="<?php echo $row[12];?>"</td>
 
-                      <td class="column100 column11" data-column="column11"><?php echo $row[9];?></td>
+                      <td class="column100 column12" data-column="column12"><?php echo $row[9];?></td>
 
-                      <td class="column100 column12" data-column="column12"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td>
-                      <td class="column100 column12" data-column="column12"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PRINT" formaction="status.php"/></td>
-                      <td class="column100 column12" data-column="column12"><input class="btn btn-danger pull-right" type="submit" name="submit" value="FINISH" formaction="receipt.php"/></td>
+                      <td class="column100 column13" data-column="column13"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td>
+                      <td class="column100 column13" data-column="column13"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PRINT" formaction="status.php"/></td>
+                      <td class="column100 column13" data-column="column13"><input class="btn btn-danger pull-right" type="submit" name="submit" value="FINISH" formaction="receipt.php"/></td>
                       </form>
 
                     </tr>
