@@ -244,7 +244,7 @@ $kuirirun1=mysqli_query($dbconn,$kuiri1) or die ("Can Not Continue");
   <input type="hidden" name="file_link" value="<?php echo $Download;?>">
                       <tr>
                         <td colspan=2 align="center"><input class="btn btn--radius-2 btn--red" type="submit" name="submit" required="required" value="UPDATE"/></td>
-                            	<a href="<?php echo $Download;?>" target="_blank"><img width="40"src="../images/printlogo.jpg">DOWNLOAD FILE</a>
+                              <input type="hidden" name="filelink" value="<?php echo $Download;?>">
                       </tr>
 
                 </form>
