@@ -260,7 +260,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
           <div class="name">TOTAL PRICE RM:</div>
           <div class="value">
             <div class="input-group">
-              <input class="input100" type=text name=total size=10 value="-">
+              <input class="input100" type="number" name="total" step=".01" size=10 value="-">
               <input class="btn btn--radius-2 btn--red" type=button  value=Calculate onClick="calculate(this.form);">
             </div>
           </div>
@@ -294,7 +294,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
       <input type="hidden" name="file_link" value="<?php echo $Download;?>">
       										<tr>
       											<td colspan=2 align="center"><input class="btn btn--radius-2 btn--red" type="submit" name="submit" required="required" value="UPDATE"/></td>
-      													<input type="hidden" name="filelink" value="<?php echo $Download;?>">
+      														<a href="<?php echo $Download;?>" target="_blank"><img width="40"src="../images/printlogo.jpg">DOWNLOAD FILE</a>
       										</tr>
 
                     </form>
