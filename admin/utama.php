@@ -218,7 +218,7 @@ $query=mysqli_query($dbconn,"SELECT * FROM admin WHERE ADMIN_USERNAME='$currentu
                               Total Revenue
                             </div>
                             <div class="cell" data-title="Pending">
-                              <?php echo "RM "; echo $row[2]; echo ".00";?>
+                              <?php echo "RM "; echo $row[2];?>
                             </div>
                           </div>
 
