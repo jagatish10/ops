@@ -86,39 +86,6 @@
         <div class="row pad-botm">
             <div class="col-md-12">
                 <!-- <h4 class="header">Online Printing System</h4> -->
-                <div class="counter">
-    <!-- <div class="container"> -->
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="process">
-                    <p class="counter-count">3</p>
-                    <p class="process-p">Average Processing Days</p><i class="fas fa-calendar-day fa-2x" style="color:black "></i>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="delivery">
-                    <p class="counter-count">3</p>
-                    <p class="delivery-p">Average Delivery Days</p><i class="fas fa-shipping-fast fa-2x" style="color:black"></i>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="branches">
-                    <p class="counter-count">6</p>
-                    <p class="branches-p">Shops around Malaysia</p><i class="fas fa-store fa-2x" style="color:black"></i>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <div class="service">
-                    <p class="counter-count">24</p>
-                    <p class="service-p">Customer Service Hours</p><i class="fas fa-user-tie fa-2x" style="color:black"></i>
-                </div>
-            </div>
-        <!-- </div> -->
-    </div>
-</div>
 
   </div>
   <div class="container main-container">
@@ -160,6 +127,40 @@
   	</div><!-- /.carousel -->
 
   </div><!-- /.container -->
+
+  <div class="counter">
+<!-- <div class="container"> -->
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <div class="process">
+      <p class="counter-count">3</p>
+      <p class="process-p">Average Processing Days</p><i class="fas fa-calendar-day fa-2x" style="color:black "></i>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <div class="delivery">
+      <p class="counter-count">3</p>
+      <p class="delivery-p">Average Delivery Days</p><i class="fas fa-shipping-fast fa-2x" style="color:black"></i>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <div class="branches">
+      <p class="counter-count">6</p>
+      <p class="branches-p">Shops around Malaysia</p><i class="fas fa-store fa-2x" style="color:black"></i>
+  </div>
+</div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <div class="service">
+      <p class="counter-count">24</p>
+      <p class="service-p">Customer Service Hours</p><i class="fas fa-user-tie fa-2x" style="color:black"></i>
+  </div>
+</div>
+<!-- </div> -->
+</div>
+</div>
 
         <br>
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
