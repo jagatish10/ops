@@ -57,6 +57,10 @@
                 </a>
 
             </div>
+            <div class="right-div">
+                    <a href="files/usermanual.pdf" download>
+                        <button class="login100-form-btn" style="background:#14051c">USER MANUAL</button>
+                    </a>
         </div>
     </div>
     <!-- LOGO HEADER END-->
