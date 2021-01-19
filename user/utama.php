@@ -149,7 +149,7 @@ $name=$row[1];
 
                           <div class="row1">
                             <div class="cell">
-                              Waiting for Payment
+                              Waiting for Printing
                             </div>
                             <div class="cell" data-title="Pending">
                               <?php echo $row[3];?>
@@ -209,7 +209,7 @@ $name=$row[1];
                               Total Payment
                             </div>
                             <div class="cell" data-title="Pending">
-                              <?php echo "RM "; echo $row[0]; echo ".00";?>
+                              <?php echo "RM "; echo $row[0];?>
                             </div>
                           </div>
 
