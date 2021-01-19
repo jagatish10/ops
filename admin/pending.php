@@ -94,6 +94,7 @@ function filterTable($query)
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="../admin/utama.php">ADMIN HOME</a></li>
                             <li><a href="utama1.php">ACCESSIBILITY</a></li>
                         </ul>
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
@@ -168,6 +169,7 @@ function filterTable($query)
                       <td class="column100 column13" data-column="column13" style="display:none"><input type="hidden" name="Collection" value="<?php echo $row[10];?>"</td>
                       <td style="display:none"><input type="hidden" name="Comment" value="<?php echo $row[11];?>"</td>
                       <td class="column100 column4" data-column="column4"><input type="hidden" name="Payment" value="<?php echo $row[12];?>"><?php echo $row[12];?></td>
+                      <td class="column100 column14" data-column="column14" style="display:none"><input type="hidden" name="Address" value="<?php echo $row[13];?>"</td>
 
 
                       <td class="column100 column5" data-column="column5"><input class="btn btn-danger pull-right" type="submit" name="submit" value="PAYMENT" formaction="printing.php"/></td>
