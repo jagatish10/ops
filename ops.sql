@@ -46,8 +46,8 @@ CREATE TABLE `admin` (
 INSERT INTO `admin` (`ADMIN_ID`, `ADMIN_USERNAME`, `ADMIN_PASSWORD`, `ADMIN_FNAME`, `ADMIN_LNAME`, `ADMIN_CONTACT`, `ADMIN_EMAIL`, `ADMIN_IMAGE`, `log_in`) VALUES
 (1, 'jagatish', '12345', 'Jagatish', 'Narayan Rao', '019-4277776', 'jn@gmail.com', 'jaga.jpg', 'Offline'),
 (2, 'risshe', '12345', 'Risshe', 'Kumaraguru', '011-24080780', 'rk@gmail.com', 'risshe.jpg', 'Offline'),
-(3, 'darshini', '12345', 'Darshini', 'Sundrasiagran', '017-8916962', 'ds@gmail.com', 'nopic.png', 'Offline'),
-(4, 'fatin', '12345', 'Fatin', 'Sofian', '016-4482690', 'fs@gmail.com', 'nopic.png', 'Offline');
+(3, 'darshini', '12345', 'Darshini', 'Sundrasiagran', '017-8916962', 'ds@gmail.com', 'darshini.png', 'Offline'),
+(4, 'fatin', '12345', 'Fatin', 'Sofian', '016-4482690', 'fs@gmail.com', 'fatin.png', 'Offline');
 
 -- --------------------------------------------------------
 
@@ -173,10 +173,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`USER_ID`, `USER_NAME`, `USER_PASSWORD`, `USER_FNAME`, `USER_LNAME`, `USER_CONTACT`, `USER_EMAIL`, `USER_IMAGE`, `log_in`) VALUES
-(101, 'darshini', '12345', 'Darshini', 'Sundrasiagran', '017-8916962', 'ds@student.usm.my', 'nopic.png', 'Offline'),
+(101, 'darshini', '12345', 'Darshini', 'Sundrasiagran', '017-8916962', 'ds@student.usm.my', 'darshini.png', 'Offline'),
 (102, 'jagatish', '12345', 'Jagatish', 'Narayan Rao', '019-4277776', 'jagatish10@student.usm.my', 'jaga.jpg', 'Offline'),
 (103, 'risshe', '12345', 'Risshe', 'Kumaraguru', '011-24080780', 'rk@student.usm.my', 'risshe.jpg', 'Offline'),
-(104, 'fatin', '12345', 'Fatin', 'Sofian', '016-4482690', 'fs@student.usm.my', 'nopic.png', 'Offline');
+(104, 'fatin', '12345', 'Fatin', 'Sofian', '016-4482690', 'fs@student.usm.my', 'fatin.png', 'Offline');
 
 --
 -- Indexes for dumped tables
