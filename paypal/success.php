@@ -43,7 +43,7 @@
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                         <li><a href="../user/utama.php">HOME</a></li>
+                         <li><a href="../user/utama.php">USER HOME</a></li>
                        </ul>
                          <ul id="menu-top" class="nav navbar-nav navbar-right">
                         </ul>
@@ -113,12 +113,13 @@ if(!empty($txn_id)){
 
 <?php }else{ ?>
     <h1>Your payment has been successful.</h1>
+    <h1>Reload the page to view the order table.</h1>
     <h2>TXN ID: <?php echo $txn_id; ?></h2>
     <h2>Payment Gross: <?php echo '$'.$payment_gross.' '.$currency_code; ?></h2>
 <?php } }else{ ?>
     <h1>Your payment has failed.</h1>
 <?php } ?>
-<a href="https://ops-eprint.herokuapp.com/user/upload1.php">Back to home</a>
+<a href="https://ops-eprint.herokuapp.com/user/utama.php">Back to home</a>
 
 </div>
 </div>
