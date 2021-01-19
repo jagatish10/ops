@@ -19,7 +19,7 @@ if(isset($_POST['search']))
 
 function filterTable($query)
 {
-    $connect = mysqli_connect("freedb.tech", "freedbtech_ops", "ops12345", "freedbtech_ops");
+      $connect = mysqli_connect("sql5.freemysqlhosting.net", "sql5388011", "BMQ3iMfRsp", "sql5388011");
     $filter_Result = mysqli_query($connect, $query);
     return $filter_Result;
 }
