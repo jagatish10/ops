@@ -8,7 +8,7 @@
 </html>
 <?php
 
-	$connect = new PDO("mysql:host=sql12.freesqldatabase.com;dbname=sql12386185;charset=utf8mb4;","sql12386185","dWtsJEfg3j");
+	$connect = new PDO("mysql:host=freedb.tech;dbname=freedbtech_ops;charset=utf8mb4;","freedbtech_ops","ops12345");
 
 	date_default_timezone_set('Asia/Kuala_Lumpur');
 
