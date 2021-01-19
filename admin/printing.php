@@ -13,6 +13,7 @@ include ("session.php");
   $Collection = $_POST['Collection'];
   $Comment = $_POST['Comment'];
   $Payment = $_POST['Payment'];
+  $Address = $_POST['Address'];
 }
 
 $currentuser=$_SESSION['ADMIN_USERNAME'];
@@ -230,6 +231,16 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
           <div class="value">
             <div class="wrap-input100 ">
               <input class="input100" type="text" readonly name="collection" required="required" value="<?php echo $Collection;?>"></input>
+              <span class="focus-input100"></span>
+            </div>
+          </div>
+      </div>
+
+      <div class="form-row">
+          <div class="name">ADDRESS</div>
+          <div class="value">
+            <div class="wrap-input100 ">
+              <input class="input100" type="text" readonly name="address" required="address" value="<?php echo $Address;?>"></input>
               <span class="focus-input100"></span>
             </div>
           </div>
