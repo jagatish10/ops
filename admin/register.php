@@ -77,6 +77,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Contineu");
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
 						<ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="../admin/utama.php">ADMIN HOME</a></li>
                             <li><a href="../admin/utama1.php">ACCESSIBILITY</a></li>
                         </ul>
 						<ul id="menu-top" class="nav navbar-nav navbar-left" style="padding-left:150px">
