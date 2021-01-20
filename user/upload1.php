@@ -129,7 +129,7 @@ $kuirirun=mysqli_query($dbconn,$kuiri) or die ("Can Not Continue");
                     <tr class="row100">
                       <td class="column100 column1" data-column="column1"><?php echo $row[0];?></td>
                       <td class="column100 column2" data-column="column2"><?php echo $row[2];?></td>
-                      <td class="column100 column3" data-column="column3"><?php echo $row[3];?></td>
+                      <td class="column100 column3" data-column="column3"><?php echo 'RM '.$row[3];?></td>
                       <td class="column100 column4" data-column="column4"><?php echo $row[4];?></td>
                       <td class="column100 column5" data-column="column5"><?php echo $row[5];?></td>
                       <td class="column100 column6" data-column="column6"><form target="_self" action="<?php echo $paypalURL; ?>" method="post">
